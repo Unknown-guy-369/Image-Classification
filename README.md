@@ -80,9 +80,8 @@ optimizer = optim.Adam(model.parameters(),lr=0.001)
 
 ```python
 # Train the Model
-def train_model(model, train_loader, num_epochs=3):
-
-     for epoch in range(num_epochs):
+def train_model(model,train_loader,num_epochs=3):
+  for epoch in range(num_epochs):
     model.train()
     running_loss = 0.0
     for images,labels in train_loader:
@@ -93,16 +92,12 @@ def train_model(model, train_loader, num_epochs=3):
       optimizer.step()
       running_loss += loss.item()
 
-    print('Name: THIRUNAVUKKARASU MEENAKSHISUNDARAM')
-    print('Register Number: 212224220117')
+    print('Name: Abishek Priyan M')
+    print('Register Number: 212224240004')
     print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
         
         
-        
-        print('Name: THIRUNAVUKKARASU MEENAKSHISUNDARAM')
-        print('Register Number:212224220117')
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
 ```
 
